@@ -10,8 +10,12 @@ const Greet = () => {
 
     console.log(lastSegment);
 
-    const hostname = window.location.hostname;
-    console.log(hostname);
+
+    const newname = lastSegment.replace("_", " ");
+
+    const newnamepro = newname.replace("_", " ");
+
+
 
 
 
@@ -24,15 +28,15 @@ const Greet = () => {
 
     return (
         <>
-            <h1 className="from" > {lastSegment} </h1>
+            <h1 className="from" style={{ textTransform: "capitalize" }}> {newnamepro} </h1>
             <h2> wishes you a very happy rakshabandhan</h2>
 
             make yours like this
             <form>
 
                 <div>
-                    <label for="text">Name </label>
-                    <input type="text" name="text" id="text"
+
+                    <input placeHolder="apna name yaha likhe" type="text" name="text" id="text"
                         value={name}
                         onChange={
                             (e) => {

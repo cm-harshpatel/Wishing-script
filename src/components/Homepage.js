@@ -9,6 +9,10 @@ const Homepage = () => {
 
     console.log(lastSegment);
 
+    const underscoredname = name.replace(" ", "_");
+    const underscorednamepro = underscoredname.replace(" ", "_");
+
+
 
 
 
@@ -27,8 +31,8 @@ const Homepage = () => {
             <form>
 
                 <div>
-                    <label for="text">Name </label>
-                    <input type="text" name="text" id="text"
+
+                    <input placeHolder="apna name yaha likhe" type="text" name="text" id="text"
                         value={name}
                         onChange={
                             (e) => {
@@ -46,7 +50,9 @@ const Homepage = () => {
                     <button type="submit" >Enter</button>
                 </Link> */}
 
-                <Link to={`/${name}`}>
+
+
+                <Link to={`/${underscorednamepro}`}>
                     <button type="submit" >Enter</button>
                 </Link>
 

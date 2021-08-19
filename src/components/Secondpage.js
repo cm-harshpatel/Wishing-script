@@ -6,9 +6,18 @@ const Secondpage = (props) => {
 
     const lastSegment = url.split("/").pop();
 
+    const newname = lastSegment.replace("_", " ");
 
-    const newurl = `http://${url.split("/")[2]}/greet/${lastSegment}`;
-    console.log(newurl);
+    const newnamepro = newname.replace("_", " ");
+
+
+
+
+
+
+
+    const newurlpro = `http://${url.split("/")[2]}/greet-from/${lastSegment}`;
+    console.log(newurlpro);
 
 
 
@@ -17,13 +26,13 @@ const Secondpage = (props) => {
 
     return (
         <>
-            <h1 className="from" > {lastSegment} </h1>
-            <h2> wishes you a very happy rakshabandhan</h2>
+            <h1 className="from" style={{ textTransform: "capitalize" }} > {newnamepro} </h1>
+            <h2> Wishes you a very happy rakshabandhan</h2>
 
 
 
             <button>
-                <a style={{ textDecoration: "none" }} href={`whatsapp://send?text=${newurl}`} dataAction="share/whatsapp/share" target="_blank" >Share on Whatsapp</a>
+                <a style={{ textDecoration: "none" }} href={`whatsapp://send?text=${newurlpro}`} dataAction="share/whatsapp/share" target="_blank" >Share on Whatsapp</a>
 
             </button>
 

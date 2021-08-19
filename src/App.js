@@ -28,7 +28,7 @@ function App() {
           } />
 
         <Route
-          path="/greet/:name"
+          path="/greet-from/:name"
           render={() =>
             (<Greet />)
           } />
