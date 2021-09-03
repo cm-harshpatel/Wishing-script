@@ -32,7 +32,7 @@ const Secondpage = (props) => {
 
 
             <button>
-                <a style={{ textDecoration: "none" }} href={`whatsapp://send?text=${newurlpro}`} dataAction="share/whatsapp/share" target="_blank" >Share on Whatsapp</a>
+                <a style={{ textDecoration: "none" }} href={`whatsapp://send?text=${newnamepro} ने आपके लिए कुछ भेजा है जल्दी से *नीली लाइन* को टच करके देखो ${newurlpro}`} dataAction="share/whatsapp/share" target="_blank" >Share on Whatsapp</a>
 
             </button>
 
